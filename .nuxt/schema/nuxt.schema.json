@@ -1,0 +1,432 @@
+{
+  "id": "#",
+  "properties": {
+    "appConfig": {
+      "id": "#appConfig",
+      "properties": {
+        "nuxtIcon": {
+          "title": "Nuxt Icon",
+          "description": "Configure the defaults of Nuxt Icon",
+          "id": "#appConfig/nuxtIcon",
+          "properties": {
+            "size": {
+              "title": "Icon Size",
+              "description": "Set the default icon size. Set to false to disable the sizing of icon in style.",
+              "tags": [
+                "@studioIcon material-symbols:format-size-rounded"
+              ],
+              "tsType": "string | false",
+              "id": "#appConfig/nuxtIcon/size",
+              "default": "1em",
+              "type": "string"
+            },
+            "class": {
+              "title": "CSS Class",
+              "description": "Set the default CSS class",
+              "tags": [
+                "@studioIcon material-symbols:css"
+              ],
+              "id": "#appConfig/nuxtIcon/class",
+              "default": "",
+              "type": "string"
+            },
+            "aliases": {
+              "title": "Icon aliases",
+              "description": "Define Icon aliases to update them easily without code changes.",
+              "tags": [
+                "@studioIcon material-symbols:star-rounded",
+                "@studioInputObjectValueType icon"
+              ],
+              "tsType": "{ [alias: string]: string }",
+              "id": "#appConfig/nuxtIcon/aliases",
+              "default": {},
+              "type": "object"
+            }
+          },
+          "type": "object",
+          "default": {
+            "size": "1em",
+            "class": "",
+            "aliases": {}
+          }
+        },
+        "nui": {
+          "id": "#appConfig/nui",
+          "properties": {
+            "defaultShapes": {
+              "id": "#appConfig/nui/defaultShapes",
+              "properties": {
+                "accordion": {
+                  "title": "Default shape for the BaseAccordion component",
+                  "description": "",
+                  "tags": [],
+                  "tsType": "'straight' | 'rounded' | 'curved'",
+                  "id": "#appConfig/nui/defaultShapes/accordion",
+                  "default": "rounded",
+                  "type": "string"
+                },
+                "autocompleteItem": {
+                  "title": "Default shape for the BaseAutocompleteItem component",
+                  "description": "",
+                  "tags": [],
+                  "tsType": "'straight' | 'rounded' | 'curved' | 'full'",
+                  "id": "#appConfig/nui/defaultShapes/autocompleteItem",
+                  "default": "rounded",
+                  "type": "string"
+                },
+                "avatar": {
+                  "title": "Default shape for the BaseAvatar component",
+                  "description": "",
+                  "tags": [],
+                  "tsType": "'straight' | 'rounded' | 'curved' | 'full'",
+                  "id": "#appConfig/nui/defaultShapes/avatar",
+                  "default": "full",
+                  "type": "string"
+                },
+                "button": {
+                  "title": "Default shape for the BaseButton component",
+                  "description": "",
+                  "tags": [],
+                  "tsType": "'straight' | 'rounded' | 'curved' | 'full'",
+                  "id": "#appConfig/nui/defaultShapes/button",
+                  "default": "rounded",
+                  "type": "string"
+                },
+                "buttonAction": {
+                  "title": "Default shape for the BaseButtonAction component",
+                  "description": "",
+                  "tags": [],
+                  "tsType": "'straight' | 'rounded' | 'curved' | 'full'",
+                  "id": "#appConfig/nui/defaultShapes/buttonAction",
+                  "default": "rounded",
+                  "type": "string"
+                },
+                "buttonIcon": {
+                  "title": "Default shape for the BaseButtonIcon component",
+                  "description": "",
+                  "tags": [],
+                  "tsType": "'straight' | 'rounded' | 'curved' | 'full'",
+                  "id": "#appConfig/nui/defaultShapes/buttonIcon",
+                  "default": "rounded",
+                  "type": "string"
+                },
+                "buttonClose": {
+                  "title": "Default shape for the BaseButtonIcon component",
+                  "description": "",
+                  "tags": [],
+                  "tsType": "'straight' | 'rounded' | 'curved' | 'full'",
+                  "id": "#appConfig/nui/defaultShapes/buttonClose",
+                  "default": "full",
+                  "type": "string"
+                },
+                "card": {
+                  "title": "Default shape for the BaseCard component",
+                  "description": "",
+                  "tags": [],
+                  "tsType": "'straight' | 'rounded' | 'curved' | 'full'",
+                  "id": "#appConfig/nui/defaultShapes/card",
+                  "default": "rounded",
+                  "type": "string"
+                },
+                "dropdown": {
+                  "title": "Default shape for the BaseDropdown component",
+                  "description": "",
+                  "tags": [],
+                  "tsType": "'straight' | 'rounded' | 'curved' | 'full'",
+                  "id": "#appConfig/nui/defaultShapes/dropdown",
+                  "default": "rounded",
+                  "type": "string"
+                },
+                "iconBox": {
+                  "title": "Default shape for the BaseIconBox component",
+                  "description": "",
+                  "tags": [],
+                  "tsType": "'straight' | 'rounded' | 'curved' | 'full'",
+                  "id": "#appConfig/nui/defaultShapes/iconBox",
+                  "default": "rounded",
+                  "type": "string"
+                },
+                "input": {
+                  "title": "Default shape for all input components component - BaseAutocomplete - BaseCheckbox - BaseInput - BaseInputFile - BaseInputListbox - BaseInputSelect - BaseInputTextarea",
+                  "description": "",
+                  "tags": [],
+                  "tsType": "'straight' | 'rounded' | 'curved' | 'full'",
+                  "id": "#appConfig/nui/defaultShapes/input",
+                  "default": "rounded",
+                  "type": "string"
+                },
+                "message": {
+                  "title": "Default shape for the BaseMessage component",
+                  "description": "",
+                  "tags": [],
+                  "tsType": "'straight' | 'rounded' | 'curved' | 'full'",
+                  "id": "#appConfig/nui/defaultShapes/message",
+                  "default": "curved",
+                  "type": "string"
+                },
+                "pagination": {
+                  "title": "Default shape for the BasePagination component",
+                  "description": "",
+                  "tags": [],
+                  "tsType": "'straight' | 'rounded' | 'curved' | 'full'",
+                  "id": "#appConfig/nui/defaultShapes/pagination",
+                  "default": "rounded",
+                  "type": "string"
+                },
+                "progress": {
+                  "title": "Default shape for the BaseProgress component",
+                  "description": "",
+                  "tags": [],
+                  "tsType": "'straight' | 'rounded' | 'curved' | 'full'",
+                  "id": "#appConfig/nui/defaultShapes/progress",
+                  "default": "full",
+                  "type": "string"
+                },
+                "prose": {
+                  "title": "Default shape for the BaseProse component",
+                  "description": "",
+                  "tags": [],
+                  "tsType": "'straight' | 'rounded' | 'curved'",
+                  "id": "#appConfig/nui/defaultShapes/prose",
+                  "default": "rounded",
+                  "type": "string"
+                },
+                "tabSlider": {
+                  "title": "Default shape for the BaseTabSlider component",
+                  "description": "",
+                  "tags": [],
+                  "tsType": "'straight' | 'rounded' | 'curved' | 'full'",
+                  "id": "#appConfig/nui/defaultShapes/tabSlider",
+                  "default": "rounded",
+                  "type": "string"
+                },
+                "tag": {
+                  "title": "Default shape for the BaseTag component",
+                  "description": "",
+                  "tags": [],
+                  "tsType": "'straight' | 'rounded' | 'curved' | 'full'",
+                  "id": "#appConfig/nui/defaultShapes/tag",
+                  "default": "rounded",
+                  "type": "string"
+                }
+              },
+              "type": "object",
+              "default": {
+                "accordion": "rounded",
+                "autocompleteItem": "rounded",
+                "avatar": "full",
+                "button": "rounded",
+                "buttonAction": "rounded",
+                "buttonIcon": "rounded",
+                "buttonClose": "full",
+                "card": "rounded",
+                "dropdown": "rounded",
+                "iconBox": "rounded",
+                "input": "rounded",
+                "message": "curved",
+                "pagination": "rounded",
+                "progress": "full",
+                "prose": "rounded",
+                "tabSlider": "rounded",
+                "tag": "rounded"
+              }
+            }
+          },
+          "type": "object",
+          "default": {
+            "defaultShapes": {
+              "accordion": "rounded",
+              "autocompleteItem": "rounded",
+              "avatar": "full",
+              "button": "rounded",
+              "buttonAction": "rounded",
+              "buttonIcon": "rounded",
+              "buttonClose": "full",
+              "card": "rounded",
+              "dropdown": "rounded",
+              "iconBox": "rounded",
+              "input": "rounded",
+              "message": "curved",
+              "pagination": "rounded",
+              "progress": "full",
+              "prose": "rounded",
+              "tabSlider": "rounded",
+              "tag": "rounded"
+            }
+          }
+        },
+        "tairo": {
+          "id": "#appConfig/tairo",
+          "properties": {
+            "title": {
+              "type": "string",
+              "id": "#appConfig/tairo/title",
+              "default": "Tairo"
+            },
+            "error": {
+              "id": "#appConfig/tairo/error",
+              "properties": {
+                "logo": {
+                  "id": "#appConfig/tairo/error/logo",
+                  "properties": {
+                    "component": {
+                      "type": "string",
+                      "id": "#appConfig/tairo/error/logo/component",
+                      "default": "TairoLogo"
+                    },
+                    "resolve": {
+                      "type": "boolean",
+                      "id": "#appConfig/tairo/error/logo/resolve",
+                      "default": true
+                    },
+                    "props": {
+                      "id": "#appConfig/tairo/error/logo/props",
+                      "type": "any",
+                      "default": {}
+                    }
+                  },
+                  "type": "object",
+                  "default": {
+                    "component": "TairoLogo",
+                    "resolve": true,
+                    "props": {}
+                  }
+                }
+              },
+              "type": "object",
+              "default": {
+                "logo": {
+                  "component": "TairoLogo",
+                  "resolve": true,
+                  "props": {}
+                }
+              }
+            },
+            "panels": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "name",
+                  "component"
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "position": {
+                    "type": "string",
+                    "tsType": "'left' | 'right'",
+                    "$default": "left"
+                  },
+                  "component": {
+                    "type": "string"
+                  },
+                  "props": {
+                    "type": "object"
+                  },
+                  "overlay": {
+                    "type": "boolean",
+                    "$default": true
+                  }
+                }
+              },
+              "id": "#appConfig/tairo/panels"
+            }
+          },
+          "type": "object",
+          "default": {
+            "title": "Tairo",
+            "error": {
+              "logo": {
+                "component": "TairoLogo",
+                "resolve": true,
+                "props": {}
+              }
+            }
+          }
+        }
+      },
+      "type": "object",
+      "default": {
+        "nuxtIcon": {
+          "size": "1em",
+          "class": "",
+          "aliases": {}
+        },
+        "nui": {
+          "defaultShapes": {
+            "accordion": "rounded",
+            "autocompleteItem": "rounded",
+            "avatar": "full",
+            "button": "rounded",
+            "buttonAction": "rounded",
+            "buttonIcon": "rounded",
+            "buttonClose": "full",
+            "card": "rounded",
+            "dropdown": "rounded",
+            "iconBox": "rounded",
+            "input": "rounded",
+            "message": "curved",
+            "pagination": "rounded",
+            "progress": "full",
+            "prose": "rounded",
+            "tabSlider": "rounded",
+            "tag": "rounded"
+          }
+        },
+        "tairo": {
+          "title": "Tairo",
+          "error": {
+            "logo": {
+              "component": "TairoLogo",
+              "resolve": true,
+              "props": {}
+            }
+          }
+        }
+      }
+    }
+  },
+  "type": "object",
+  "default": {
+    "appConfig": {
+      "nuxtIcon": {
+        "size": "1em",
+        "class": "",
+        "aliases": {}
+      },
+      "nui": {
+        "defaultShapes": {
+          "accordion": "rounded",
+          "autocompleteItem": "rounded",
+          "avatar": "full",
+          "button": "rounded",
+          "buttonAction": "rounded",
+          "buttonIcon": "rounded",
+          "buttonClose": "full",
+          "card": "rounded",
+          "dropdown": "rounded",
+          "iconBox": "rounded",
+          "input": "rounded",
+          "message": "curved",
+          "pagination": "rounded",
+          "progress": "full",
+          "prose": "rounded",
+          "tabSlider": "rounded",
+          "tag": "rounded"
+        }
+      },
+      "tairo": {
+        "title": "Tairo",
+        "error": {
+          "logo": {
+            "component": "TairoLogo",
+            "resolve": true,
+            "props": {}
+          }
+        }
+      }
+    }
+  }
+}
